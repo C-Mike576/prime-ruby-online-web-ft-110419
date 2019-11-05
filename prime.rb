@@ -8,7 +8,7 @@ def prime?(int)
     primes << i if i%i == 0 && i%1 == 0
   end
   #binding.pry
-  primes.
+  primes.shift
   if primes.include?(int)
     true
   else
