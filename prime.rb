@@ -3,8 +3,7 @@ require 'pry'
 
 def prime?(int)
   numbers = (1..2_000_000).to_a
-  
   numbers.each do |i|
-    if 
+    if int % i 
   end
 end
