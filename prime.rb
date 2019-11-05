@@ -2,12 +2,5 @@
 require 'pry'
 
 def prime?(int)
-  numbers = (1..2_000_000).to_a
-  numbers.each do |i|
-    if int % i == 0 && i < int
-      false
-    else 
-      true
-    end
-  end
+  (2..int-1).none? { |i| int%i == 0 }
 end
