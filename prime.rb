@@ -2,5 +2,9 @@
 require 'pry'
 
 def prime?(int)
-  (2..int-1).none? { |i| int%i == 0 && i > 0 }
+  if int > 0 
+    (2..int-1).none? { |i| int%i == 0 }
+  else
+    false
+  end
 end
