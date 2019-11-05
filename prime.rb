@@ -9,7 +9,7 @@ def prime?(int)
     #binding.pry
     primes << i if i%i == 0 && i%1 == 0 && !(i%2 == 0)
   end
-  primes[0] = 1
+  primes[0] = 2
   if primes.include?(int)
     true
   else
