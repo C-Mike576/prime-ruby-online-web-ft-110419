@@ -7,7 +7,7 @@ def prime?(int)
   numbers.each do |i|
     primes << i if i%i == 0 && i%1 == 0
   end
-  binding.pry
+  #binding.pry
   if primes.include?(int)
     true
   else
